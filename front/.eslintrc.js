@@ -8,7 +8,7 @@ module.exports = {
     "extends": [
         "eslint:recommended",
         "plugin:@typescript-eslint/eslint-recommended",
-        "plugin:@typescript-eslint/recommended-requiring-type-checking"
+        "plugin:@typescript-eslint/recommended-requiring-type-checking",
     ],
     "globals": {
         "Atomics": "readonly",
@@ -23,7 +23,7 @@ module.exports = {
     },
     "plugins": [
         "@typescript-eslint",
-        "svelte3"
+        "svelte3",
     ],
     "overrides": [
         {
@@ -33,6 +33,7 @@ module.exports = {
     ],
     "rules": {
         "no-unused-vars": "off",
+        "eol-last": ["error", "always"],
         "@typescript-eslint/no-explicit-any": "error",
         // TODO: remove those ignored rules and write a stronger code!
         "@typescript-eslint/no-floating-promises": "off",
@@ -41,7 +42,7 @@ module.exports = {
         "@typescript-eslint/no-unsafe-assignment": "off",
         "@typescript-eslint/no-unsafe-return": "off",
         "@typescript-eslint/no-unsafe-member-access": "off",
-        "@typescript-eslint/restrict-template-expressions": "off"
+        "@typescript-eslint/restrict-template-expressions": "off",
     },
     "settings": {
         "svelte3/typescript": true,
